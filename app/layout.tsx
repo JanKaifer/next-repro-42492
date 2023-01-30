@@ -1,4 +1,5 @@
 export default function Layout({ children }: any) {
+  const navbarH = 200;
   return (
     <html>
       <head />
@@ -7,7 +8,7 @@ export default function Layout({ children }: any) {
           id="header"
           style={{
             position: "fixed",
-            height: 200,
+            height: navbarH,
             width: "100vw",
             background: "green",
           }}
@@ -15,7 +16,7 @@ export default function Layout({ children }: any) {
         <div
           id="content"
           style={{
-            paddingTop: 200,
+            paddingTop: navbarH,
           }}
         >
           {children}
